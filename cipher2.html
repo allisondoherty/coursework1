@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="design.css">
+        <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="design.html">Design</a>
+        <a href="cipher1.html">Cipher 1</a>
+        <a class="active" href="cipher2.html">Cipher 2</a>
+        <a href="cipher3.html">Cipher 3</a>
+        <a href="references.html">References</a>
+        </div>
+        <title>Coursework 1</title>
+    </head>
+    <body>
+        <h1>Rail Fence Cipher</h1>
+        <p>
+        The rail fence cipher is a bit more complicated than most others.  Rather than
+        each letter simply being changed to a different letter, there's a lot more behind
+        the scenes work with this one.  First the message typed in will be written based
+        on a rail system.  The number of rails basically means the number of rows being used.
+        The first letter of the message will be on the first line, then the second letter
+        will be on the second line, third letter on the third line, so on.  If there are
+        only three rails, it will stop at the third row and start going back up.  So
+        in this case the fourth letter will be on the second row, fifth letter on the
+        fifth row. </br>
+        Here's an easy visual: </br>
+        Typed in: my secret message </br>
+        Rails: 3 </br>
+        Outcome: </br>
+        M----C------M----A----- </br>
+        -Y--E--R--T--E--S--G-- </br>
+        ---S------E------S------E </br>
+        Then the final message will be made by reading left to right, starting with the first
+        row. Spaces will be ignored.</br>
+        So for this example, the final message will be "MCMAYERTESGSESE"
+        </p>
+        
+        <div id="cipher2_input">
+            <textarea rows="1" cols="50" autofocus id="input2">Type your message here</textarea>
+            <button type="button" onclick="encode2();" id="encode_button">Encode</button>
+        </div>
+        <p>
+            This is your encoded message:<br/>
+        </p>
+        
+        <div id="output2">
+        <div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

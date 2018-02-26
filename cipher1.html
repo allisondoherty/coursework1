@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="design.css">
+        <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="design.html">Design</a>
+        <a class="active" href="cipher1.html">Cipher 1</a>
+        <a href="cipher2.html">Cipher 2</a>
+        <a href="cipher3.html">Cipher 3</a>
+        <a href="references.html">References</a>
+        </div>
+        <title>Coursework 1</title>
+    </head>
+    <body>
+        <h1>Route Cypher</h1>
+        <p>
+            The route cypher is quite a complicated cypher due to its multiple interpretations.
+            The message is first written out by row in a grid with a certain number of columns.
+            Once the text is written out it will use an assigned route.  This route can be spiralling
+            inwards from the top right corner in a clockwise direction, reading backwards by column,
+            going in a zigzag motion, etc. </br>
+            In this example i've used 5 columns, and the route will be starting in the bottom right
+            corner and reading backwards through each column.
+        </p>
+        
+        <div id="cipher1_input">
+            <textarea rows="1" cols="50" autofocus id="input1">Type your message here</textarea>
+            <button type="button" onclick="encode1();" id="encode_button">Encode</button>
+        </div>
+        <p>
+            This is your encoded message:<br/>
+        </p>
+        
+        <div id="output1">
+        <div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
